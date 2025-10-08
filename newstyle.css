@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0d1b2a;
+    color: white;
+    padding: 15px 40px;
+}
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f9a825;
+}
+header a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+header button {
+    background: #f9a825;
+    padding: 10px 18px;
+    border-radius: 20px;
+    
+}
+
+.cls{
+        height: 50vh;
+        background-image: url(/Images/Egg\ Image.jpeg);
+        background-size: 400px 300px;
+        background-position:left center;
+        background-repeat: no-repeat;
+        }
+#spe-par{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.txt{
+    margin-left: 400px;
+}
+.button{
+      background: #f9a825;
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+.img{
+    text-align: center;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+
+}
+.fries{
+    
+    text-align:center;
+    background-color: #0d1b2a;
+    color: white;
+    background-image: url(/Images/new\ Fries.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position:left center;
+    padding: 20px;
+
+}
+
+
+.fries p{
+    font-size: 45px;
+    color: #f9a825;
+}
+
+.bg-img{
+        display: flex;
+}
+.card1{
+    margin: 10px;
+}
+.card1 img{
+    height: 400px;
+    width: 400px;
+}
+
+.card2{
+    text-align: center;
+}
+.card2 p{
+    text-align: left;
+}
+
+
+.card3{
+    border: solid rgb(255, 254, 254);
+    border-radius: 30px;
+    text-align: center;
+    margin: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.new-img{
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.img1 img{
+    height: 400px;
+    width: 300px;
+}
+
+.img2 img{
+    height: 200px;
+    width: 200px;
+}
+
+.dal{
+    height: 120vh;
+    background-image: url(/Images/Section/indian-vegetarian-cuisine-dal-makhani-600nw-655715554.webp);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: right;
+}
+
+.founder1{
+    display: flex;
+    margin: 10px;
+}
+
+.people{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.people img{
+    height: 30vh;
+    border-radius: 100%;
+}
+
+.dal p{
+    font-size: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: #f9a825;
+    text-align: center;
+}
+
+.cad{
+    display: flex;
+    margin: 50px;
+    padding: 10px;
+    margin-left: 200px;
+    
+}
+
+.cad1{
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    border: solid rgb(255, 249, 249) 2px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.cad2{
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    border: solid rgb(255, 249, 249) 2px;
+     border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.cad2 p{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.cad3{
+     margin: 20px;
+    padding: 5px;
+    text-align: center;
+    border: solid rgb(255, 249, 249) 2px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.form{
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    text-align: center;
+    
+}
+
+.form input{
+    margin: 5px;
+}
+
+.quote{
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.quote #author{
+    color:#0d1b2a;
+    font-size: 30px;
+}
+
+.footer{
+    display: flex;
+    padding-left: 100px;
+    background-color: #0d1b2a;
+    color: white;
+    
+    
+}
+
+.foot1{
+    margin: 20px;
+    padding: 10px;
+}
+
+.foot2{
+    margin: 20px;
+    padding: 10px;
+    padding-left: 200px;
+}
+
+.foot3{
+    margin: 20px;
+    padding: 10px;
+    padding-left: 200px;
+}
+
+.foot1 h2{
+    color: #f9a825;
+}
+
+.foot2 a{
+    color: #f9a825;
+}
+
+.foot3 a{
+    color: #f9a825;
+}
