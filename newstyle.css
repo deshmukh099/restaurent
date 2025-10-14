@@ -3,6 +3,12 @@ body{
     padding: 0;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 header {
     background: #0d1b2a;
     color: white;
@@ -11,7 +17,8 @@ header {
 header div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
 }
 header h3 {
     font-size: 30px;
@@ -257,3 +264,6 @@ header button {
 .foot3 a{
     color: #f9a825;
 }
+
+
+
