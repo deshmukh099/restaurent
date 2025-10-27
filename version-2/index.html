@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: #0d1b2a;
+            color: white;
+        }
+
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0px 100px;
+            padding: 5px 10px;
+        }
+
+        .header h2{
+            color: #f9a825;
+        }
+        
+        .header ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .header select{
+            background-color: #0d1b2a;
+            color: white;
+            border: none;
+        }
+
+         .butt{
+            background-color: #0d1b2a;
+            border: none;
+            margin-top: 2px;
+        }
+
+        .butt a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .butt1{
+            background-color: #0d1b2a;
+            color: #f9a825;
+            border-radius: 0px;
+            margin: 10px;
+            padding: 10px 20px;
+            border-color: #f9a825;
+        }
+
+        .header button:hover{
+            background-color: #f9a825;
+            color: black;
+        }
+
+        .bg1{
+            height: 80vh;
+            background-image: url(/New_Images/Background_Images/Background\ Image\ 1.png);
+            background-size: 500px 600px;
+            background-position:left center;
+            background-repeat: no-repeat;
+        }
+
+        .text1{
+            margin-left: 500px;
+            padding-top: 100px;
+            padding-right: 50px;
+        }
+
+        #spe-par{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bg1 button{
+            background-color: #f9a825;
+            color: black;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 5px 10px;
+        }
+        .bg1 button:hover{
+            background-color:#0d1b2a;
+            color: white;
+        }
+
+        .img{
+            text-align: center;
+            margin: 20px 10px;
+        }
+        .img img{
+            margin-right: 10px;
+        }
+        .img h3{
+            color: grey;
+        }
+
+        .logo{
+           text-align: center;
+           display: flex;
+           align-items: center;
+        }
+        .logo1{
+            margin-left: 600px;
+        }
+        .logo2, .logo3, .logo4, .logo5{
+            margin-left: 20px;
+        }
+
+        .image{
+            margin: 20px 260px;
+        }
+        
+        .fries{
+            background-color: #0d1b2a;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 35%;
+        }
+        .text2 h4{
+            color: #f9a825;
+        }
+        .text2 button{
+            background-color: #f9a825;
+            color: black;
+        }
+        
+        .butt2{
+            border-radius: 4px;
+            padding: 5px 10px;
+        }
+
+        .butt2:hover{
+            background-color: white;
+            color: black;
+        }
+        .bg2{
+            height: 80vh;
+            background-image: url(/New_Images/Background_Images/Background\ Image\ 2.png);
+            background-size: 500px 600px;
+            background-position:left center;
+            background-repeat: no-repeat;
+            margin: 0;
+            display: flex;
+            padding-left: 520px;
+        }
+        .first h2, h1{
+            text-align: center;
+        }
+        .first p{
+            padding-right: 50px;
+        }
+        .second{
+            align-items: center;
+            text-align: center;
+            border: solid rgb(255, 254, 254);
+            margin-top: 20px;
+            margin-bottom: 200px;
+            margin-right: 30px;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        }
+        .second button{
+            background-color: #f9a825;
+            color: black;
+            padding: 2px 10px;
+            border-radius: 3px;
+            border-color: #f9a825;
+        }
+
+        .second button:hover{
+            background-color: black;
+            color: white;
+            border-color: black;
+        }
+
+        .new-img{   
+            display: flex;
+            margin: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .img1 img{
+            height: 400px;
+            width: 300px;
+        }
+
+        .img2 img{
+            height: 200px;
+            width: 200px;
+        }
+
+        .bg3{
+            height: 80vh;
+            background-image: url(/New_Images/Background_Images/Background\ Image\ 3.png);
+            background-size: 500px 600px;
+            background-position:right;
+            background-repeat: no-repeat;
+            padding-bottom: 250px;
+        }
+
+        .people1 img{
+            border-radius: 100% ;
+            margin: 20px;
+        }
+        .people2 img{
+            border-radius: 100% ;
+            margin: 20px;
+        }
+        .people3 img{
+            border-radius: 100% ;
+            margin: 20px;
+        }
+        .people4 img{
+            border-radius: 100% ;
+            margin: 20px;
+        }
+        .people5 img{
+            border-radius: 100% ;
+            margin: 20px;
+        }
+        .people6 img{
+            border-radius: 100% ;
+            margin: 20px;
+        }
+        .people1 h4, h5{
+            text-align: center;
+        }
+        .people2 h4, h5{
+            text-align: center;
+        }
+        .people3 h4, h5{
+            text-align: center;
+        }
+        .people4 h4, h5{
+            text-align: center;
+        }
+        .people5 h4, h5{
+            text-align: center;
+        }
+        .people6 h4, h5{
+            text-align: center;
+        }
+        .one{
+            display: flex;
+            margin: 30px;
+        }
+        .two{
+            display: flex;
+            margin: 30px;
+        }
+        .text3{
+            font-size: 25px;
+            padding-right: 600px;
+            padding-left: 40px;
+            justify-content: center;
+        }
+
+        .cad{
+            display: flex;
+            margin: 50px;
+            padding: 10px;
+            margin-left: 200px;
+        }
+
+        .cad1{
+            margin: 20px;
+            padding: 5px;
+            text-align: center;
+            border: solid rgb(255, 249, 249) 2px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        }
+        .cad2{
+            margin: 20px;
+            padding: 5px;
+            text-align: center;
+            border: solid rgb(255, 249, 249) 2px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        }
+        .cad2 p{
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
+        .cad3{
+            margin: 20px;
+            padding: 5px;
+            text-align: center;
+            border: solid rgb(255, 249, 249) 2px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        }
+        .butt3{
+            background-color: #f9a825;
+            color: #0d1b2a;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border-color: #f9a825;
+        }
+        .butt3:hover{
+            background-color: black;
+            color: white;
+            border-color:#f9a825;
+        }
+
+       .form {
+            display: flex;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 60px auto;
+            text-align: left;
+        }
+
+        .part1, .part2 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 50%;
+        }
+        .form  input{
+            padding: 10px;
+        }
+        .butt4{
+            background-color: #0d1b2a;
+            color: white;
+            border-color: #0d1b2a;
+            border-radius: 2px;
+            padding: 5px;
+        }
+        .butt4:hover{
+            background-color: #f9a825;
+            color: black;
+            border-color: #f9a825;
+        }
+       
+        .bg4{
+            height: 40vh;
+            background-image: url(/New_Images/Background_Images/Background\ Image\ 4.png);
+            background-size: 300px 300px;
+            background-position:right;
+            background-repeat: no-repeat;
+            padding: 0;
+        }
+        .quote{
+            text-align: center;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding-top: 100px;
+        }
+
+        .quote #author{
+            color:#0d1b2a;
+            font-size: 30px;
+        }
+
+        .footer{
+            display: flex;
+            padding-left: 100px;
+            background-color: #0d1b2a;
+            color: white; 
+        }
+
+        .foot1{
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .foot2{
+            margin: 20px;
+            padding: 10px;
+            padding-left: 200px;
+            border-left: #f9a825 solid;
+        }
+
+        .foot3{
+            margin: 20px;
+            padding: 10px;
+            padding-left: 200px;
+            border-left: #f9a825 solid;
+            
+        }
+
+        .foot1 h2{
+            color: #f9a825;
+        }
+
+        .foot2 a{
+            color: #f9a825;
+            text-decoration: none;
+        }
+
+        .foot3 a{
+            color: #f9a825;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- This  is Navbar -->
+     <header>
+        <div class="header">
+            <h2>Restaurant</h2>
+            <ul>
+                <li><select name="home" id="home">
+                 <option value="home"><a href="/home">Home</a></option>
+                </select></li>
+
+                <li><select name="pages" id="pages">
+                <option value="pages"><a href="/pages">Pages</a></option>
+                </select></li>
+
+                <button class="butt" type="button">
+                <li><a href="/menu">Menu</a></li>
+                </button>
+
+                <li><select name="componants" id="componants">
+                <option value="componants"><a href="/componants">Componants</a></option>
+                </select></li>
+
+                <li><select name="utilities" id="utilities">
+                <option value="utilities"><a href="/utilities">Utilities</a></option>
+                </select></li>
+
+                <li><select name="plugins" id="plugins">
+                <option value="plugins"><li><a href="/plugins">Plugins</a></li></option>
+                </select></li>
+
+            </ul>
+            <button type="button" class="butt1">MAKE A RESERVATION</button>
+        </div>
+    </header>
+    <!-- This is the first section of the page -->
+   <div class="bg1">
+        <div class="text1">
+                <p id="spe-par">The Spectacle <b>Before Us<br> Was Indeed </b> Sublime. <br></p>
+                <p>Apparently, we had reached a great height in the atmosphere, for the sky was a dead black, and which lifts the horizon of the sea to the level of the spectator on a hillside.</p>
+                <button class="button">ORDER ONLINE</button>
+                <button class="button">OUR LOCATION</button>
+            </div>
+   </div>
+   
+   <!-- This div  is for Images Only -->
+    <div class="img">
+            <h3>Menu</h3>
+            <img src="/Images/Section/red-lentil-soup-with-slice-lemon-breadcrumbs.jpg" alt="Menu" height="300" width="250">
+            <img src="/Images/pexels-mali-64208.jpg" alt="Menu" height="300" width="250">
+            <img src="/Images/pexels-pixabay-461382.jpg" alt="Menu" height="300" width="250">
+            <img src="/Images/pexels-yankrukov-8818667.jpg" alt="Menu" height="300" width="250">
+    </div>
+
+    <!-- This div is for logos -->
+     <div class="logo">
+        <div class="logo1">
+             <img src="/New_Images/Logo_Images/icons8-breakfast-64.png" alt="breakfast" height="50" width="50">
+             <h6>Breakfast</h6>
+        </div>
+        <div class="logo2">
+            <img src="/New_Images/Logo_Images/icons8-lunch-64.png" alt="lunch" height="50" width="50">
+            <h6>Lunch</h6>    
+        </div>
+        <div class="logo3">
+            <img src="/New_Images/Logo_Images/icons8-dinner-50.png" alt="dinner" height="50" width="50">
+            <h6>Dinner</h6>
+        </div>
+        <div class="logo4">
+            <img src="/New_Images/Logo_Images/icons8-dessert-50.png" alt="dessert" height="50" width="50">
+            <h6>Dessert</h6>
+        </div>
+        <div class="logo5">
+            <img src="/New_Images/Logo_Images/icons8-wine-bottle-50.png" alt="drinks" height="50" width="50">
+            <h6>Drinks</h6>
+        </div>   
+     </div>
+
+     <!-- Insert Slider Here -->
+     <div class="image">
+        <img src="/Images/pexels-mali-64208.jpg" alt="" height="450px" width="1000px">
+     </div>
+    
+     <!-- This div is for fries -->
+     <div class="fries">
+        <div class="img-fries">
+            <img src="/New_Images/new Fries.png" alt="fries image" height="200px" width="200px">
+        </div>
+        <div class="text2">
+            <h4>Hungry?</h4>
+            <h1>We will home deliver !</h1>
+            <button class="butt2">Make an Order</button>
+        </div>
+     </div>
+
+     <!-- this div is for second background -->
+     <div class="bg2">
+        <div class="first">
+            <h2>Catering</h2>
+            <h1>We Manage Your Events</h1>
+            <p>We Manage Your Events, we specialize in creating unforgettable experiences through delicious food and seamless service. Whether it’s a wedding, corporate event, birthday party, or family gathering, our dedicated team handles every detail from menu planning and food preparation to presentation and service ensuring your event runs smoothly. With a focus on quality, taste, and professionalism, we make every occasion truly special and worry-free.</p>
+        </div>
+        <div class="second">
+            <img src="/Images/pexels-kunal-lakhotia-781256899-29685056.jpg" alt="food image" height="200" width="150">
+            <p>We cater in Weddings, Corporate Functions and Events</p>
+            <button>Hire Us Now</button>
+        </div>
+    </div>
+
+    <!-- This div is for images -->
+     <div class="new-img">
+            <div class="img1">
+                <img src="/Images/Section/roasted-lamb-with-caramelized-onion-vegetables-greens.jpg" alt="food image" >
+            </div>
+            <div class="img2">
+                <img src="/Images/Section/food3.jpg" alt="food image">
+                <img src="/Images/Section/pre-prepared-food-showcasing-ready-eat-delicious-meals-go.jpg" alt="food image">
+                <img src="/Images/Section/pizza-3010062_1280.jpg" alt="food image">
+                <img src="/Images/pexels-yankrukov-8818667.jpg" alt="food image">
+                <img src="/Images/pexels-pixabay-461382.jpg" alt="food image">
+                <img src="/Images/pexels-mali-64208.jpg" alt="food image">
+                <img src="/Images/Section/food4.jpeg" alt="food image">
+                <img src="/Images/Section/food.jpeg" alt="food image">
+                <img src="/Images/Section/food1.jpeg" alt="food image">
+                <img src="/Images/Section/food2.jpeg" alt="food image">  
+            </div>
+        </div>
+
+        <!-- This div is for authors -->
+         <div class="bg3">
+            <div class="text3">
+                <p>We are a theme restaurant that brings creativity and flavor together to make every celebration unforgettable. Whether it’s a wedding, corporate event, or private party, we craft menus and décor that perfectly match your theme and style. Our team handles everything from setup and catering to service and ambiance ensuring a smooth, delightful experience.</p>
+            </div>
+            <div class="owner">
+                <div class="one">
+                    <div class="people1">
+                        <img src="/Images/peoples/people1.jpeg" alt="owner" height="200" width="200">
+                        <h4>Oliver Bennett</h4>
+                        <h5>Owner</h5>
+                    </div>
+                    <div class="people2">
+                        <img src="/Images/peoples/people2.jpeg" alt="owner" height="200" width="200">
+                        <h4>Lucy Harrington</h4>
+                        <h5>Owner</h5>
+                    </div>
+                    <div class="people3">
+                        <img src="/Images/peoples/people3.jpeg" alt="owner" height="200" width="200">
+                        <h4>James Fletcher</h4>
+                        <h5>Founder</h5>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="people4">
+                        <img src="/Images/peoples/people4.jpeg" alt="owner" height="200" width="200">
+                        <h4>Amelia Turner</h4>
+                        <h5>Founder</h5>
+                    </div>
+                    <div class="people5">
+                        <img src="/Images/peoples/people5.jpeg" alt="owner" height="200" width="200">
+                        <h4>Sophie Davies</h4>
+                        <h5>Manager</h5>
+                    </div>
+                    <div class="people6">
+                        <img src="/Images/peoples/people6.jpeg" alt="owner" height="200" width="200">
+                        <h4>Ruby Gardner</h4>
+                        <h5>Cheaf</h5>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- This div is for Card -->
+        <div class="cad">
+            <div class="cad1">
+                <h3>Address</h3>
+                <p>Av. Paz Soldan 290, Sun Isidro, Lima 27 - Peru</p>
+                <p>+511 442-2777</p>
+                <p>mail@restaurantpro.com</p>
+            </div>
+
+            <div class="cad2">
+                <h3>Hours of Service</h3>
+                <p><b>Monday to Saturday</b></p>
+                <p>1:00 pm - 3:00 pm and</p>
+                <p>7:00 pm - 11:00 pm</p>
+                <p><b>Sunday</b></p>
+                <p>12:30 pm - 3:30 pm</p>
+            </div>
+
+            <div class="cad3">
+                <h3>Telephone support :</h3>
+                <p>Monday to Saturday from 9:00 am to 9:00 pm</p>
+                <button class="butt3">Make a Reservation</button>
+            </div>
+        </div>
+
+        <!-- This div is for Form -->
+         <form action="submit" class="form">
+            <div class="part1">
+                <input type="text" placeholder="Your Name"><br>
+                <input type="text" placeholder="Subject"><br>
+                <input type="email" placeholder="Email Address"><br>   
+            </div>
+            <div class="part2">
+                <textarea name="message" id="message" rows="4" placeholder="Type Your message Here"></textarea><br>
+                <button class="butt4">GIVE US A SHOT</button>
+            </div>
+         </form>
+
+        <!-- this div is for Quote -->
+        <div class="bg4">
+            <div class="quote">
+                <p id="star">⭐⭐⭐⭐⭐</p>
+                <p id="text">Restaurant & Cafe, we aim at promoting the foodstuff industry through the branches, we establish and through the new dishes. and integrate between different caltures, by merging different Original and its western recipes</p>
+                <h1 id="author">-Lily Rose</h1>
+            </div>
+        </div>
+
+        <!-- This div is for Footer -->
+          <footer class="footer">
+
+        <div class="foot0">
+            <img src="/Images/—Pngtree—a silver fork with noodle_15524513.png" alt="form image" height="200px" width="200px">
+        </div>
+        <div class="foot1">
+            <h2>Restaurant</h2>
+            <p>Want To Test Our Food?</p>
+            <button class="butt3">Order Online</button>
+        </div>
+
+        <div class="foot2">
+            <h3>ABOUT</h3>
+            <a href="About">About</a><br>
+            <a href="Services">Services</a><br>
+            <a href="Careers">Careers</a><br>
+            <a href="Hire us">Hire Us</a>
+        </div>
+
+        <div class="foot3">
+            <h3>RESOURCES</h3>
+            <a href="Terms">Terms</a><br>
+            <a href="Help">Help</a><br>
+            <a href="Privacy"></a><br>
+
+            <a href="http://www.facebook.com"><img src="/Images/icons/facebook.png" alt="facebook" height="25px" width="25px"></a>
+            <a href="http://www.instagram.com"><img src="/Images/icons/instagram.png" alt="instagram" height="25px" width="25px"></a>
+            <a href="http://www.x.com"><img src="/Images/icons/twitter.png" alt="twitter" height="25px" width="25px"></a>
+            <a href="http://www.google.com"><img src="/Images/icons/google.png" alt="google" height="25px" width="25px"></a>
+            
+        </div>
+    </footer>
+    </body>
+</html>
