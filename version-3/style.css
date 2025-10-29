@@ -1,0 +1,416 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  color: white;
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.dropbtn::after {
+  content: " ▼";
+  font-size: 12px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown  a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 40px;
+}
+
+ .dropdown-content a:hover {
+  background-color: #0d1b2a;
+} 
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #f9a825;
+  
+} 
+
+header img{
+    float: left;
+    padding-left: 40px;
+}
+
+.button-bordered{
+    width : 200px;
+    text-transform : uppercase;
+    text-align:center;
+    border-radius : 10px;
+    height:50px;
+    border-color: #f9a825;
+    color: #f9a825;
+    background-color: black;
+}
+
+.button-bordered:hover{
+  background-color: #f9a825;
+  color: black;
+}
+
+header button{
+    margin-left: 40px;
+}
+
+.section-1{
+            height: 80vh;
+            background-image: url(/New_Images/Background_Images/Background\ Image\ 1.png);
+            background-size: 500px 600px;
+            background-position:left center;
+            background-repeat: no-repeat;
+        }
+
+.text-1{
+            margin-left: 500px;
+            padding-top: 100px;
+            padding-right: 50px;
+        }
+.text-1 h1{
+  text-align: left;
+}
+.button-fill{
+    width : 150px;
+    text-transform : uppercase;
+    text-align:center;
+    border-radius : 5px;
+    height:40px;
+    border-color: #f9a825;
+    color: black;
+    background-color:#f9a825;
+}
+
+.button-fill:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.button-empty{
+    width: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    border-color: #f9a825;
+    color:#f9a825;
+    background-color: white;
+}
+
+.button-empty:hover{
+    background-color: #f9a825;
+    color: black;
+}
+
+.section-1 button{
+    margin-right: 10px;
+}
+
+.section-2{
+  text-align: center;
+  margin: 20px 10px;
+}
+
+.section-2 img{
+  margin-right: 10px;
+  height: 300px;
+  width: 250px;
+}
+
+.section-2 h3{
+  color: gray;
+}
+
+.section-3{
+  margin-top: 30px;
+  display:flex;
+  text-align: center;
+  align-items: center;
+}
+
+.section-3 img{
+  height: 50px;
+  width: 50px;
+}
+
+ .logo1{
+   margin-left: 600px;
+}
+.logo2, .logo3, .logo4, .logo5{
+  margin-left: 20px;
+}
+
+.section-4{
+  margin: 20px 260px;
+  
+}
+.section-4 img{
+  height: 450px;
+  width: 1000px;
+}
+
+.section-5{
+  background-color: #0d1b2a;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 35%;
+}
+.text-2{
+  text-align: left;
+}
+.text-2 p{
+  color: #f9a825;
+}
+.text-2 h3{
+  color: white;
+}
+.fries img{
+  height: 200px;
+  width: 200px;
+}
+
+.section-6{
+  height: 80vh;
+  background-image: url(/New_Images/Background_Images/Background\ Image\ 2.png);
+  background-size: 500px 600px;
+  background-position:left center;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  padding-left: 520px;
+}
+.first h2, h1{
+  text-align: center;
+}
+.first p{
+  padding-right: 50px;
+}
+.second{
+  align-items: center;
+  text-align: center;
+  border: solid rgb(255, 254, 254);
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-right: 30px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.second img{
+  height: 200px;
+  width: 150px  ;
+}
+.first p{
+  text-align: left;
+  justify-content: right;
+}
+
+ .section-7{   
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+.img-1 img{
+  height: 400px;
+  width: 300px;
+}
+ .img-2 img{
+   height: 200px;
+   width: 200px;
+}
+
+.section-8{
+  height: 80vh;
+  background-image: url(/New_Images/Background_Images/Background\ Image\ 3.png);
+  background-size: 500px 600px;
+  background-position:right;
+  background-repeat: no-repeat;
+  padding-bottom: 250px;
+}
+.text-3 p{
+  text-align: left;
+  justify-content: center;
+  font-size: 20px;
+  padding-right: 600px;
+  padding-left: 30px;
+}
+.one{
+  display: flex;
+}
+.two{
+  display: flex;
+}
+
+.owner img{
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.section-9{
+  display: flex;
+  margin: 50px;
+  padding: 10px;
+  margin-left: 200px;
+}
+.card-1{
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  border: solid rgb(255, 249, 249) 2px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.card-2{
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  border: solid rgb(255, 249, 249) 2px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+.card-2 p{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.card-3{
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  border: solid rgb(255, 249, 249) 2px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.section-10{
+  margin:10px;
+  padding: 5px;
+}
+.form {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 60px auto;
+  text-align: left;
+}
+.part-1, .part-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+}
+.form  input{
+  padding: 10px;
+}
+
+.section-11{
+  height: 40vh;
+  background-image: url(/New_Images/Background_Images/Background\ Image\ 4.png);
+  background-size: 300px 300px;
+  background-position:right;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.quote{
+  text-align: center;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding-top: 100px;
+}
+
+.footer{
+  display: flex;
+  padding-left: 100px;
+  background-color: #0d1b2a;
+  color: white; 
+}
+.foot-1{
+  margin: 20px;
+  padding: 10px;
+}
+.foot-2{
+  margin: 20px;
+  padding: 10px;
+  padding-left: 200px;
+  border-left: #f9a825 solid;
+}
+.foot-3{
+  margin: 20px;
+  padding: 10px;
+  padding-left: 200px;
+  border-left: #f9a825 solid;  
+}
+.foot-1 h2{
+  color: #f9a825;
+}
+.foot-2 a{
+  color: #f9a825;
+  text-decoration: none;
+}
+.foot-3 a{
+  color: #f9a825;
+  text-decoration: none;
+  
+}
+
+.foot-0 img{
+  height: 200px;
+  width: 200px;
+}
+.foot-3 img{
+  height: 25px;
+  width: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
