@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'RobotoCondensed', sans-serif;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+  float: left;
+  padding-left: 80px;
+  height: 50px;
+}
+
+.navbar li {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px 30px; 
+}
+
+.dropbtn::after {
+  content: " ▼";
+  font-size: 12px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content li a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navbar li:hover .dropdown-content {
+  display: block;
+  background-color: #f9a825;
+}
+
+button{
+    text-transform : uppercase;
+    text-align:center;
+    border-radius : 10px;
+    height:50px;
+    min-width: 170px;
+    width: auto;
+    line-height: 20px;
+}
+
+.button-nav{
+   margin-left: 50px;
+   border-color: #f9a825;
+   color: #f9a825;
+   background-color: black;
+}
+.button-nav:hover{
+  background-color:#f9a825;
+  color: black;
+}
+
+.tag-line h1{
+  margin: 0;
+  padding-top: 200px;
+}
+.tag-line img{
+  float: left;
+  width: 600px;
+  height: 700px;
+}
+
+.button-fill{
+  background-color: #f9a825;
+  color: #0d1b2a;
+  border-color: #f9a825;
+}
+.button-fill:hover{
+  background-color: #0d1b2a;
+  color: white;
+  border-color: #0d1b2a;
+}
+
+.button-empty{
+  background-color: white;
+  color:#f9a825;
+  border-color: #f9a825;
+}
+.button-empty:hover{
+  background-color: #f9a825;
+  color: #0d1b2a;
+  border-color: #f9a825;
+}
+
+.menu{
+  text-align: center;
+  margin: 20px 10px;
+  padding-top: 300px;
+}
+
+.menu img{
+  margin-right: 10px;
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.menu h3{
+  color: gray;
+}
+
+.categories{
+  margin-top: 30px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+}
+
+.food{
+  height: 50px;
+  width: 50px;
+}
+
+ .breakfast{
+   margin-left: 600px;
+}
+.lunch, .dinner, .drinks, .dessert{
+  margin-left: 20px;
+}
+
+.noodles{
+  height: 450px;
+  width: 1000px;
+  margin: 20px 260px;
+}
+
+
+
+/* Font */
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('fonts/RobotoCondensed-Regular.ttf');
+}
