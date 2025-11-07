@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'RobotoCondensed', sans-serif;
+    font-family: 'SourceCodePro', sans-serif;
 }
 
 header{
@@ -14,7 +14,8 @@ header{
 
 header img {
   float: left;
-  padding-left: 80px;
+  margin-left: 100px;
+  padding-left: 50px;
   height: 50px;
 }
 
@@ -26,9 +27,16 @@ header img {
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 17px;
-  padding: 10px 30px; 
+  font-size: 13px;
+  margin-left: 30px;
 }
+
+.navbar  ul{
+  margin: 0px 100px;
+  text-align: center;
+  padding-right: 50px;
+}
+
 
 .dropbtn::after {
   content: " ▼";
@@ -37,31 +45,32 @@ header img {
 
 .dropdown-content{
     display: none;
-    position: absolute;
+    position: absolute ;
+    
 }
 
 .dropdown-content li a {
   padding: 5px;
   text-decoration: none;
+  background-color:#f9a825;
+  
 }
 
 .navbar li:hover .dropdown-content {
   display: block;
-  background-color: #f9a825;
-}
+} 
 
 button{
     text-transform : uppercase;
     text-align:center;
-    border-radius : 10px;
-    height:50px;
+    border-radius : 5px;
+    height:40px;
     min-width: 170px;
     width: auto;
     line-height: 20px;
 }
 
 .button-nav{
-   margin-left: 50px;
    border-color: #f9a825;
    color: #f9a825;
    background-color: black;
@@ -71,9 +80,20 @@ button{
   color: black;
 }
 
-.tag-line h1{
+.spactale h1{
   margin: 0;
   padding-top: 200px;
+  font-family: none;
+  font-weight: 400;
+}
+.spactale strong{
+  font-weight: 700;
+}
+.spactale p{
+  margin-right: 450px;
+}
+.spactale button{
+  margin-bottom: 100px;
 }
 .tag-line img{
   float: left;
@@ -113,11 +133,13 @@ button{
   margin-right: 10px;
   height: 300px;
   width: 250px;
-  border-radius: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .menu h3{
   color: gray;
+  margin: 40px;
 }
 
 .categories{
@@ -139,6 +161,15 @@ button{
   margin-left: 20px;
 }
 
+.categories a{
+  text-decoration: none;
+  color: black;
+}
+.categories a:hover{
+  text-decoration: underline;
+  text-decoration-color:#f9a825;
+}
+
 .noodles{
   height: 450px;
   width: 1000px;
@@ -149,6 +180,6 @@ button{
 
 /* Font */
 @font-face {
-  font-family: 'RobotoCondensed';
-  src: url('fonts/RobotoCondensed-Regular.ttf');
+  font-family: 'SourceCodePro';
+  src: url('fonts/SourceCodePro-Regular.ttf');
 }
