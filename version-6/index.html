@@ -6,6 +6,10 @@
     <title>Restaurant</title>
     <link rel="stylesheet" href="style6.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script> -->
 </head>
 <body>
      <!-- Navbar -->
@@ -71,6 +75,7 @@
             <img src="/Images/pexels-mali-64208.jpg" alt="Menu">
             <img src="/Images/pexels-pixabay-461382.jpg" alt="Menu">
             <img src="/Images/pexels-yankrukov-8818667.jpg" alt="Menu">
+            <p></p>
       </section>
 
       <!-- This section is for icons -->
@@ -78,26 +83,26 @@
         <div class="icon">
         <div class="food">
             <i class="fa-solid fa-mug-hot"></i>
-            <p><a href="">Breakfast</a></p>
+            <p><a href="#" id="breakfast">Breakfast</a></p>
         </div>
         <div class="food">
             <i class="fa-solid fa-bowl-food"></i>
-            <p><a href="#">Lunch</a></p> 
+            <p><a href="#" id="lunch">Lunch</a></p> 
         </div>
         <div class="food">
             <i class="fa-solid fa-bowl-rice"></i>
-            <p><a href="#">Dinner</a></p>
+            <p><a href="#" id="dinner">Dinner</a></p>
         </div>
         <div class="food">
             <i class="fa-solid fa-cake-candles"></i>
-            <p><a href="#">Dessert</a></p>
+            <p><a href="#" id="dessert">Dessert</a></p>
         </div>
         <div class="food">
              <i class="fa-solid fa-wine-bottle"></i>
-            <p><a href="#">Drinks</a></p>
+            <p><a href="#" id="drinks">Drinks</a></p>
         </div>
         </div>
-        <img src="/Images/pexels-mali-64208.jpg" alt="image" class="noodles">
+        <img src="/Images/pexels-mali-64208.jpg" alt="image" class="noodles" id="foodImage">
        </section>
       
        <!-- This section is for call-out-action-menu -->
@@ -108,9 +113,47 @@
             <div class="hungry">
                 <p>Hungry?</p>
                 <h3>We will home deliver!</h3>
-                <button class="button-fill">Make an Order</button>
+                <button class="button-fill" id="openModel">Make an Order</button>
             </div>
          </section>
+
+
+        <div class="modal" id="orderModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+
+                <form id="orderForm">
+                <h2>Order Form</h2>
+
+                <label>Name:</label>
+                <input type="text" id="userName" maxlength="100"
+                    pattern="[A-Za-z\s]+" required>
+
+                <label>Mobile No:</label>
+                <input type="tel" id="userMobile" maxlength="10"
+                    pattern="[0-9]{10}" required>
+
+                <label>Items (Ctrl to select multiple):</label>
+                <select id="items" multiple required>
+                    <option>Breakfast</option>
+                    <option>Lunch</option>
+                    <option>Dinner</option>
+                    <option>Dessert</option>
+                    <option>Drinks</option>
+                </select>
+
+                <label>Notes:</label>
+                <textarea id="notes" maxlength="100"></textarea>
+                <div class="counter"><span id="charCount">100</span> characters remaining</div>
+
+                <button type="submit" class="button-fill">Submit Order</button>
+                </form>
+                </div>
+            </div>
+
+        
+
+
        
          <section class="card-catering">
             <div class="catering"></div>
@@ -147,7 +190,7 @@
             </div>
           </section>
 
-                    <!-- This  section is for owners -->
+            <!-- This  section is for owners -->
             <!-- This section is for authors -->
          <section class="owner-founder">
             <div class="restro-info">
@@ -194,6 +237,7 @@
                         <b>Cheaf</b>
                     </div>
                 </div>
+                <h1></h1>
             </div>
          </section>
 
@@ -222,10 +266,18 @@
             </div>
         </div>
 
-        <!-- something went wrong section -->
-        </section>
-        <section class="wrong">
-            <img src="/New_Images/something-wrong.png" alt="wrong">
+        <!-- Map Section -->
+        <section class="map-section">
+        <h2>Our Location</h2>
+
+        <iframe
+            src="https://www.google.com/maps?q=Pune,India&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
         </section>
 
                   <!-- This section is for Form -->
@@ -244,13 +296,19 @@
          </section>
          <!-- quote -->
          <section class="review">
-            <div class="quote">
-                <i class="fa-solid fa-quote-left"></i>
-                <p>⭐⭐⭐⭐⭐</p>
-                <p>Restaurant & Cafe, we aim at promoting the foodstuff industry through the branches, we establish and through the new dishes. and integrate between different caltures, by merging different Original and its western recipes</p>
-                <h3>-Lily Rose</h3>
-            </div>
+        <div class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p id="stars">⭐⭐⭐⭐⭐</p>
+            <p id="reviewText"></p>
+            <h3 id="reviewAuthor"></h3>
+        </div>
+
+        <div class="review-controls">
+            <button id="prevReview">❮ </button>
+            <button id="nextReview">❯</button>
+        </div>
         </section>
+
 
          <!-- This is Footer -->
         <footer class="footer">
@@ -288,7 +346,13 @@
             
         </div>
     </footer>
-            
+
+    
+
+    <script src="app.js"></script>
+
+
+    
        
 </body>
 </html>

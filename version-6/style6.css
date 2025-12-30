@@ -71,6 +71,7 @@ button{
     min-width: 150px;
     width: auto;
     line-height: 10px;
+    transition: 0.3s ease;
     
 }
 
@@ -383,7 +384,7 @@ button{
 
 .contact-address{
   clear: both;
-  padding: 100px 0px;
+  padding: 0px;
   background-color: #f3f3f3;
   
 }
@@ -613,4 +614,109 @@ button{
 @font-face {
    font-family: 'Lora-Medium';
   src: url('fonts/Lora-Medium.ttf');
+}
+
+
+/*  CSS for Order Form */
+#orderForm{
+ display: flex;              
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  width: 680px;
+  
+}
+.close-btn{
+  color: red;
+  font-size: 50px;
+  float: right;;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#charCount {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+.tooltip {
+  position: fixed;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.map-section {
+  padding: 40px;
+  text-align: center;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+
+
+
+.review-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;              
+  margin-top: 20px;
+}
+
+.review-controls button {
+  width: 36px;
+  height: 36px;
+  border-radius: 5%;   
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-controls button:hover {
+  background-color: #36e800;
+}
+
+.review-controls button:active {
+  transform: scale(0.9);
 }
