@@ -454,52 +454,52 @@ button{
 
 /* form */
 
-.form {
-  display: flex;
-  gap: 40px;
-  max-width: 900px;
-  margin: 100px auto;
-  text-align: left;
-  margin-top: 200px;
-  margin-bottom: 200px
-}
-.part-1, .part-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 50%;
-}
-.form  input{
-  padding: 10px;
-}
-.part-2 button{
-  background-color: #0d1b2a;
-  color: white;
-  border-color: #0d1b2a;
-}
-.part-2 button:hover{
-  background-color: #f9a825;
-  color: black;
-  clear: both;
-}
+  .form {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+    margin: 100px auto;
+    text-align: left;
+    margin-top: 200px;
+    margin-bottom: 200px
+  }
+  .part-1, .part-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+  }
+  .form  input{
+    padding: 10px;
+  }
+  .part-2 button{
+    background-color: #0d1b2a;
+    color: white;
+    border-color: #0d1b2a;
+  }
+  .part-2 button:hover{
+    background-color: #f9a825;
+    color: black;
+    clear: both;
+  }
 
 
-/* quote */
-.review {
-  height: 250px;
-  background: url("/New_Images/Background_Images/Background Image 4.png") no-repeat right;
-  background-size: 300px 300px;
-}
-.quote{
-  text-align: center;
-  max-width: 600px;   
-  margin: auto;
-}
+  /* quote */
+  .review {
+    height: 250px;
+    background: url("/New_Images/Background_Images/Background Image 4.png") no-repeat right;
+    background-size: 300px 300px;
+  }
+  .quote{
+    text-align: center;
+    max-width: 600px;   
+    margin: auto;
+  }
 
-.quote p{
-  font-size: 13px;
-  color: #9e9fa0;
-}
+  .quote p{
+    font-size: 13px;
+    color: #9e9fa0;
+  }
 
 
 /* footer */

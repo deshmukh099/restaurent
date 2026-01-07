@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="font-SourceCodePro">
+  
+  <!-- Navbar -->
+<header class="flex items-center bg-black h-[60px]">
+
+  <!-- Logo -->
+  <img 
+    src="/New_Images/Logo_Images/Restaurent_Logo_Image.png"
+    alt="logo-image"
+    class="ml-[200px] mr-[130px]"
+  />
+
+  <!-- Navigation -->
+  <ul class="flex items-center space-x-5 mr-[60px] text-center">
+
+    
+    <li class="relative group">
+      <a href="#" class="text-white text-[13px] after:content-['▼'] p-[5px]">
+        Home 
+      </a>
+      <ul class="absolute hidden group-hover:block top-full">
+        <li>
+          <a href="#" class="block px-2 py-1 bg-yellow-500 text-black rounded-xl">
+            Home
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    
+    <li class="relative group">
+      <a href="#" class="text-white text-[13px] after:content-['▼'] p-[5px]">
+        Pages 
+      </a>
+      <ul class="absolute hidden group-hover:block">
+        <li>
+          <a href="#" class="block px-2 py-1 bg-yellow-500 text-black rounded-xl">
+            Pages
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    
+    <li>
+      <a href="#" class="text-white text-[13px]">Menu</a>
+    </li>
+
+   
+    <li class="relative group">
+      <a href="#" class="text-white text-[13px] after:content-['▼'] p-[5px]">
+        Components 
+      </a>
+      <ul class="absolute hidden group-hover:block">
+        <li>
+          <a href="#" class="block px-2 py-1 bg-yellow-500 text-black rounded-xl">
+            Components
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    
+    <li class="relative group">
+      <a href="#" class="text-white text-[13px] after:content-['▼'] p-[5px]">
+        Utilities 
+      </a>
+      <ul class="absolute hidden group-hover:block top-full left-0">
+        <li>
+          <a href="#" class="block px-2 py-1 bg-yellow-500 text-black rounded-xl">
+            Utilities
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    
+    <li class="relative group">
+      <a href="#" class="text-white text-[13px] after:content-['▼'] p-[5px]">
+        Plugins 
+      </a>
+      <ul class="absolute hidden group-hover:block top-full left-0">
+        <li>
+          <a href="#" class="block px-2 py-1 bg-yellow-500 text-black rounded-xl">
+            Plugins
+          </a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <!-- Button -->
+  <button
+    class="uppercase text-center rounded-md h-[35px] min-w-[150px] px-[35px] text-1
+           border border-yellow-500 text-yellow-500 bg-black
+           mr-[80px] transition duration-300 hover:bg-yellow-500 hover:text-black ml-[80px]">
+    make a reservation
+  </button>
+
+</header>
+
+
+<!-- First Section -->
+<section class="pb-[100px] overflow-hidden">
+
+
+  <img 
+    src="/New_Images/Background_Images/Background Image 1.png"
+    alt="egg-image"
+    class="float-left w-[670px] h-[700px] pr-[100px] pr-[100px]"
+  />
+
+  <div class="py-[70px]">
+
+    <h1 class="pt-[200px]  text-3xl">
+      The Spectacle 
+      <strong class="font-bold">
+        Before Us<br> Was Indeed
+      </strong> 
+      Sublime.
+    </h1>
+
+    <p class="max-w-[700px] mx-auto mt-[10px] text-[12px] font-SourceCodePro-Light">
+      Apparently, we had reached a great height in the atmosphere, for the sky was a dead black,
+      and which lifts the horizon of the sea to the level of the spectator on a hillside.
+    </p>
+
+    <div class="mt-[10px] space-x-3">
+
+      <button
+        class="uppercase rounded-md h-[35px] px-[30px]
+               bg-yellow-500 text-[#0d1b2a] border border-yellow-500
+               transition duration-300
+               hover:bg-[#0d1b2a] hover:text-white hover:border-[#0d1b2a]">
+        order online
+      </button>
+
+      <button
+        class="uppercase rounded-md h-[35px] px-[30px]
+               bg-white text-yellow-500 border border-yellow-500
+               transition duration-300
+               hover:bg-yellow-500 hover:text-[#0d1b2a]">
+        our location
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Menu Section -->
+<section class="menu text-center  mx-[10px] pt-[20px] pb-[50px]">
+
+  <h3 class="text-[rgb(212,212,212)] m-[40px] text-xl font-semibold">
+    Menu
+  </h3>
+
+  <div class="flex justify-center gap-6 flex-wrap">
+    <img 
+      src="/Images/Section/red-lentil-soup-with-slice-lemon-breadcrumbs.jpg"
+      alt="Menu"
+      class="w-[300px] h-[400px] rounded-md mb-[10px]"
+    />
+
+    <img 
+      src="/Images/pexels-mali-64208.jpg"
+      alt="Menu"
+      class="w-[300px] h-[400px] rounded-md mb-[10px]"
+    />
+
+    <img 
+      src="/Images/pexels-pixabay-461382.jpg"
+      alt="Menu"
+      class="w-[300px] h-[400px] rounded-md mb-[10px]"
+    />
+
+    <img 
+      src="/Images/pexels-yankrukov-8818667.jpg"
+      alt="Menu"
+      class="w-[300px] h-[400px] rounded-md mb-[10px]"
+    />
+  </div>
+
+  <p class="mt-[10px]"></p>
+
+</section>
+
+
+
+<!-- Icons Section -->
+<section>
+
+  <div
+    class="flex justify-center items-center gap-[25px] h-[80px]
+           text-center pt-[30px] mx-[150px] border-b-1 border-gray-300">
+
+    <!-- Breakfast -->
+    <div class="food group cursor-pointer">
+      <i class="fa-solid fa-mug-hot text-[25px] text-[#bbbcbe] group-hover:text-black"></i>
+      <p>
+        <a href="#" class="text-[rgb(212,212,212)] m-[10px] group-hover:underline group-hover:font-bold group-hover:text-[#f9a825]" id="breakfast">
+          Breakfast
+        </a>
+      </p>
+    </div>
+
+    <!-- Lunch -->
+    <div class="food group cursor-pointer">
+      <i class="fa-solid fa-bowl-food text-[25px] text-[#bbbcbe] group-hover:text-black"></i>
+      <p>
+        <a href="#" class="text-[rgb(212,212,212)] m-[10px] group-hover:underline group-hover:font-bold group-hover:text-[#f9a825]" id="lunch">
+          Lunch
+        </a>
+      </p>
+    </div>
+
+    <!-- Dinner -->
+    <div class="food group cursor-pointer">
+      <i class="fa-solid fa-bowl-rice text-[25px] text-[#bbbcbe] group-hover:text-black"></i>
+      <p>
+        <a href="#" class="text-[rgb(212,212,212)] m-[10px]  group-hover:underline group-hover:font-bold group-hover:text-[#f9a825]" id="dinner">
+          Dinner
+        </a>
+      </p>
+    </div>
+
+    <!-- Dessert -->
+    <div class="food group cursor-pointer">
+      <i class="fa-solid fa-cake-candles text-[25px] text-[#bbbcbe] group-hover:text-black"></i>
+      <p>
+        <a href="#" class="text-[rgb(212,212,212)] m-[10px]  group-hover:underline group-hover:font-bold group-hover:text-[#f9a825]" id="dessert">
+          Dessert
+        </a>
+      </p>
+    </div>
+
+    <!-- Drinks -->
+    <div class="food group cursor-pointer">
+      <i class="fa-solid fa-wine-bottle text-[25px] text-[#bbbcbe] group-hover:text-black"></i>
+      <p>
+        <a href="#" class="text-[rgb(212,212,212)] m-[10px]  group-hover:underline group-hover:font-bold group-hover:text-[#f9a825]" id="drinks">
+          Drinks
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Image -->
+  <img
+    src="/Images/pexels-mali-64208.jpg"
+    alt="image"
+    id="foodImage"
+    class="block mx-auto mt-[20px] h-[500px] w-[1220px] pb-[80px]"
+  />
+
+</section>
+
+<!-- Call-out Action Menu -->
+<section class="flex items-center h-[210px] bg-[#0d1b2a] text-white">
+  <div>
+    <img
+      src="/New_Images/new Fries.png"
+      alt="fries image"
+      class="w-[200px] h-[200px] ml-[500px]"
+    />
+  </div>
+  <div class="ml-10">
+    <p class="text-[#f9a825] mb-[5px] font-[SourceCodePro-Medium]">
+      Hungry?
+    </p>
+
+    <h3 class="text-[25px] font-medium mb-[10px] font-[Lora-Regular]">
+      We will home deliver!
+    </h3>
+
+    <button
+      id="openModel"
+      class="uppercase rounded-md h-[35px] px-[30px]
+             bg-yellow-500 text-[#0d1b2a] border border-yellow-500
+             transition duration-300
+             hover:bg-[#0d1b2a] hover:text-white hover:border-[#0d1b2a]">
+      Make an Order
+    </button>
+  </div>
+
+</section>
+
+
+<!-- On click Form order online -->
+
+ <div id="orderModal" class="modal hidden ">
+  <div class="modal-content ml-[650px] mt-[10px] border-1 p-[20px] rounded">
+    <button class="close-btn text-red-700 ml-[300px] border-1 pl-[5px] pr-[5px] 
+     bg-[#fa4f4f] text-white
+               border border-[#fa4f4f] rounded-md
+               font-[SourceCodePro-Medium]
+               transition duration-300
+               hover:bg-[#f92525]
+               hover:border-[#f93725]
+               hover:text-[#0d1b2a]" id="closeModal">&times;</button>
+    <h2 class="font-bold mb-[20px] ">Order Form</h2>
+    <form id="orderForm">
+      <label for="Name">Name :</label>
+      <input type="text" class="border-1 rounded" id="userName" maxlength="100"  pattern="[A-Za-z\s]+" required>
+      <br><br>
+      <label for="Mobile">Mobile No :</label>
+      <input type="tel" class="border-1 rounded" id="userMobile" >
+      <br><br>
+      <label>Items (Ctrl to select multiple):</label>
+      <br>
+        <select id="items" class="border-1 rounded w-[200px]" multiple required>
+            <option>Breakfast</option>
+            <option>Lunch</option>
+            <option>Dinner</option>
+            <option>Dessert</option>
+            <option>Drinks</option>
+        </select>
+        <br>
+        <label >Notes:</label>
+        <textarea id="notes" maxlength="100" class="border-1 rounded"></textarea>
+        <div class="counter"><span id="charCount">100</span> characters remaining</div>
+        <button type="submit" class="mt-4 px-[20px] py-[5px]
+               bg-[#fa4f4f] text-white
+               border border-[#fa4f4f] rounded-md
+               font-[SourceCodePro-Medium]
+               transition duration-300
+               hover:bg-[#f9a825]
+               hover:border-[#f9a825]
+               hover:text-[#0d1b2a]">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<!-- Catering Section -->
+<section class="pb-[100px]">
+  <div
+    class="float-left w-[550px] h-[500px]
+           bg-no-repeat bg-cover"
+    style="background-image: url('/New_Images/Background_Images/Background Image 2.png');">
+  </div>
+  <div class="flex items-center m-[10px]">
+
+    <div class="catering-text">
+
+      <h4 class="text-center text-[20px] mb-[2px]">
+        Catering
+      </h4>
+
+      <h2
+        class="text-center text-[40px] font-black leading-[1.2]
+               mt-0 mb-[60px] font-[Lora-Regular]">
+        We Manage Your Events
+      </h2>
+
+      <p
+        class="text-[8px] leading-[1.5]
+               p-[10px] m-[10px_30px]
+               font-[SourceCodePro-Light]">
+        We Manage Your Events, we specialize in creating unforgettable experiences through delicious food and seamless service. Whether it’s a wedding, corporate event, birthday party, or family gathering, our dedicated team handles every detail from menu planning and food preparation to presentation and service ensuring your event runs smoothly. With a focus on quality, taste, and professionalism, we make every occasion truly special and worry-free.
+      </p>
+
+    </div>
+
+    <div
+      class="border border-white p-[20px] text-center
+             shadow-[5px_5px_15px_rgba(0,0,0,0.4)]
+             mt-[30px] rounded-lg
+             w-[450px] h-[400px]
+             mx-[30px]">
+
+      <img
+        src="/Images/pexels-kunal-lakhotia-781256899-29685056.jpg"
+        alt="food image"
+        class="w-[200px] h-[200px] mx-auto"
+      />
+
+      <p class="mt-3 text-sm">
+        We cater in Weddings, Corporate Functions and Events
+      </p>
+
+      <button
+        class="mt-4 uppercase rounded-md h-[35px] px-[30px]
+               bg-yellow-500 text-[#0d1b2a] border border-yellow-500
+               transition duration-300
+               hover:bg-[#0d1b2a] hover:text-white hover:border-[#0d1b2a]">
+        Hire Us Now
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+  
+<!-- Photo Gallery -->
+<section class="m-[100px] ">
+  <div>
+    <img
+      src="/Images/Section/roasted-lamb-with-caramelized-onion-vegetables-greens.jpg"
+      alt="food image"
+      class="float-left w-[500px] h-[503px] rounded-[5px]"
+    />
+  </div>
+
+
+  <div class="ml-[510px]">
+    <div class="flex mb-[3px]">
+      <img
+        src="/Images/Section/food3.jpg"
+        alt="food image"
+        class="w-[250px] h-[250px] rounded-[5px] ml-[10px] mr-[10px] mb-[5px]"
+      />
+      <img
+        src="/Images/Section/pre-prepared-food-showcasing-ready-eat-delicious-meals-go.jpg"
+        alt="food image"
+        class="w-[250px] h-[250px] rounded-[5px] mr-[10px]"
+      />
+      <img
+        src="/Images/Section/pizza-3010062_1280.jpg"
+        alt="food image"
+        class="w-[250px] h-[250px] rounded-[5px] "
+      />
+    </div>
+
+    <div class="flex">
+      <img
+        src="/Images/pexels-yankrukov-8818667.jpg"
+        alt="food image"
+        class="w-[250px] h-[245px] rounded-[5px] ml-[10px] mr-[10px]"
+      />
+      <img
+        src="/Images/pexels-pixabay-461382.jpg"
+        alt="food image"
+        class="w-[250px] h-[245px] rounded-[5px] mr-[10px]"
+      />
+      <img
+        src="/Images/pexels-mali-64208.jpg"
+        alt="food image"
+        class="w-[250px] h-[245px] rounded-[5px]"
+      />
+    </div>
+  </div>
+</section>
+
+
+<!-- Owners Founders Section -->
+<section
+  class="owner-founder float-right h-[500px] mb-[250px] pb-[100px] pr-[600px]
+         bg-no-repeat bg-right"
+  style="background-image: url('/New_Images/Background_Images/Background Image 3.png');
+         background-size: 500px 600px;"
+>
+
+  <p
+    class="text-left text-[13px] max-w-[550px]
+           px-[80px]
+           mt-[150px] mb-[100px]
+           text-[#bbbcbe] font-[SourceCodePro-Light]"
+  >
+    We are a theme restaurant that brings creativity and flavor together to make every celebration
+  </p>
+
+  <!-- Owners  -->
+  <div class="owner text-center">
+
+   
+    <div class="flex mr-[200px] justify-center">
+      <div>
+        <img src="/Images/peoples/people1.jpeg" alt="owner"
+             class="w-[150px] h-[150px] rounded-full p-[10px] mr-[10px]" />
+        <strong class="block text-[#bbbcbe] text-[12px]">Oliver Bennett</strong>
+        <b class="text-[#bbbcbe] text-[10px]">Owner</b>
+      </div>
+
+      <div>
+        <img src="/Images/peoples/people2.jpeg" alt="owner"
+             class="w-[150px] h-[150px] rounded-full p-[10px] mr-[10px] people" />
+        <strong class="block text-[#bbbcbe] text-[12px]">Lucy Harrington</strong>
+        <b class="text-[#bbbcbe] text-[10px]">Owner</b>
+      </div>
+
+      <div>
+        <img src="/Images/peoples/people3.jpeg" alt="owner"
+             class="w-[150px] h-[150px] rounded-full p-[10px] mr-[10px] people" />
+        <strong class="block text-[#bbbcbe] text-[12px]">James Fletcher</strong>
+        <b class="text-[#bbbcbe] text-[10px]">Founder</b>
+      </div>
+    </div>
+
+   
+    <div class="flex justify-center mt-[50px] mr-[200px]">
+      <div>
+        <img src="/Images/peoples/people4.jpeg" alt="owner"
+             class="w-[150px] h-[150px] rounded-full p-[10px] mr-[10px]" />
+        <strong class="block text-[#bbbcbe] text-[12px]">Amelia Turner</strong>
+        <b class="text-[#bbbcbe] text-[10px]">Founder</b>
+      </div>
+
+      <div>
+        <img src="/Images/peoples/people5.jpeg" alt="owner"
+             class="w-[150px] h-[150px] rounded-full p-[10px] mr-[10px]" />
+        <strong class="block text-[#bbbcbe] text-[12px]">Sophie Davies</strong>
+        <b class="text-[#bbbcbe] text-[10px]">Manager</b>
+      </div>
+
+      <div>
+        <img src="/Images/peoples/people6.jpeg" alt="owner"
+             class="w-[150px] h-[150px] rounded-full p-[10px] mr-[10px]" />
+        <strong class="block text-[#bbbcbe] text-[12px]">Ruby Gardner</strong>
+        <b class="text-[#bbbcbe] text-[10px]">Chef</b>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact  -->
+<section class="clear-both bg-[#f3f3f3] p-0">
+
+  <div
+    class="flex m-[100px] p-[10px]
+           max-h-[600px]">
+
+   
+    <div
+      class="m-[20px] p-[5px]
+             pt-[40px] pl-[40px]
+             w-[450px]
+             border-2 border-[rgb(255,249,249)]
+             rounded-[5px]
+             shadow-[5px_5px_15px_rgba(0,0,0,0.4)]">
+
+      <p class="font-[SourceCodePro-Light]">
+        Av. Paz Soldan 290, Sun Isidro, Lima 27 - Peru
+      </p>
+      <p class="font-[SourceCodePro-Light]">
+        +511 442-2777
+      </p>
+      <p class="font-[SourceCodePro-Light]">
+        mail@restaurantpro.com
+      </p>
+    </div>
+
+
+    <div
+      class="m-[20px] p-[5px]
+             pl-[40px]
+             w-[450px]
+             border-2 border-[rgb(255,249,249)]
+             rounded-[5px]
+             shadow-[5px_5px_15px_rgba(0,0,0,0.4)]">
+
+      <h4 class="text-[#fa4f4f] font-semibold">
+        Hours of Service
+      </h4>
+
+      <h5 class="font-medium mt-2">
+        Monday to Saturday
+      </h5>
+
+      <p class="font-[SourceCodePro-Light]">
+        1:00 pm - 3:00 pm and
+      </p>
+      <p class="font-[SourceCodePro-Light]">
+        7:00 pm - 11:00 pm
+      </p>
+
+      <h5 class="font-medium mt-2">
+        Sunday
+      </h5>
+
+      <p class="font-[SourceCodePro-Light]">
+        12:30 pm - 3:30 pm
+      </p>
+    </div>
+
+    
+    <div
+      class="m-[20px] p-[5px]
+             pl-[40px]
+             w-[450px]
+             h-[250px]
+             border-2 border-[rgb(255,249,249)]
+             rounded-[5px]
+             shadow-[5px_5px_15px_rgba(0,0,0,0.4)]">
+
+      <h4 class="font-semibold">
+        Telephone support:
+      </h4>
+
+      <p class="font-[SourceCodePro-Light]">
+        Monday to Saturday from 9:00 am to 9:00 pm
+      </p>
+
+      <button
+        class="mt-4 px-[20px] py-[5px]
+               bg-[#fa4f4f] text-white
+               border border-[#fa4f4f] rounded-md
+               font-[SourceCodePro-Medium]
+               transition duration-300
+               hover:bg-[#f9a825]
+               hover:border-[#f9a825]
+               hover:text-[#0d1b2a]">
+        Make a Reservation
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Map Section -->
+<section class="p-[40px] text-center">
+
+  <h2 class="text-2xl font-semibold mb-6">
+    Our Location
+  </h2>
+
+  <iframe
+    src="https://www.google.com/maps?q=Pune,India&output=embed"
+    class="w-full h-[400px] rounded-[10px] border-0"
+    >
+  </iframe>
+
+</section>
+
+<!--  Form -->
+<section>
+
+  <form
+    action="submit"
+    class="flex gap-[40px] max-w-[900px]
+           mx-auto mt-[200px] mb-[200px]
+           text-left">
+
+   
+    <div class="flex flex-col gap-[5px] w-1/2">
+      <input
+        type="text"
+        placeholder="Your Name"
+        class="p-[10px] border border-gray-300"
+      />
+      <input
+        type="text"
+        placeholder="Subject"
+        class="p-[10px] border border-gray-300"
+      />
+      <input
+        type="email"
+        placeholder="Email Address"
+        class="p-[10px] border border-gray-300"
+      />
+    </div>
+
+    
+    <div class="flex flex-col gap-[5px] w-1/2">
+      <textarea
+        rows="4"
+        placeholder="Type Your message Here"
+        class="p-[10px] border border-gray-300"
+      ></textarea>
+
+      <button
+        class="uppercase mt-2 px-[20px] py-[8px]
+               bg-[#0d1b2a] text-white
+               border border-[#0d1b2a] rounded-md
+               transition duration-300
+               hover:bg-[#f9a825]
+               hover:text-black">
+        GIVE US A SHOT
+      </button>
+    </div>
+
+  </form>
+
+</section>
+
+
+<section
+  class="float-right h-[250px]
+         bg-no-repeat bg-right"
+  style="background-image: url('/New_Images/Background_Images/Background Image 4.png');
+         background-size: 300px 300px;"
+>
+            <div class="justify-center text-center ml-[400px] mr-[400px]">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Restaurant & Cafe, we aim at promoting the foodstuff industry through the branches, we establish and through the new dishes. and integrate between different caltures, by merging different Original and its western recipes</p>
+                <h3 class="text-2xl text-gray-500">-Lily Rose</h3>
+            </div>
+  </section>
+
+
+
+<!-- Footer -->
+<footer class="flex bg-[#0d1b2a] text-white pl-[100px] pb-[50px]">
+
+ 
+  <div>
+    <img
+      src="/Images/—Pngtree—a silver fork with noodle_15524513.png"
+      alt="form image"
+      class="w-[200px] h-[200px] ml-[100px]"
+    />
+  </div>
+
+  <div class="mt-[20px]">
+    <img
+      src="/New_Images/Logo_Images/Restaurent_Logo_Blue_Background.png"
+      alt="logo-image"
+      class="w-[140px]"
+    />
+
+    <p class="text-[20px] font-[Lora-Regular] mt-2">
+      Want To Test <br />Our Food?
+    </p>
+
+    <button
+      class="mt-3 px-[30px] py-[8px]
+             bg-[#f9a825] text-[#0d1b2a] rounded-md
+             border border-[#f9a825]
+             transition duration-300
+             hover:bg-[#e18733] hover:text-white hover:border-[#c20101]">
+      Order Online
+    </button>
+  </div>
+
+  
+  <div class="m-[10px_200px]">
+    <h3 class="pl-[30px] text-[13px]">
+      ABOUT
+    </h3>
+
+    <div class="border-l border-[#9e9fa0]">
+      <a href="#About" class="block pl-[30px] text-[#9e9fa0] text-[12px] leading-[35px]">
+        About
+      </a>
+      <a href="#Services" class="block pl-[30px] text-[#9e9fa0] text-[12px] leading-[35px]">
+        Services
+      </a>
+      <a href="#Careers" class="block pl-[30px] text-[#9e9fa0] text-[12px] leading-[35px]">
+        Careers
+      </a>
+      <a href="#Hire us" class="block pl-[30px] text-[#9e9fa0] text-[12px] leading-[35px]">
+        Hire Us
+      </a>
+    </div>
+  </div>
+
+  
+  <div class="mr-[200px] mt-[10px]">
+
+    <h3 class="pl-[30px] text-[13px]">
+      RESOURCES
+    </h3>
+
+    <div class="border-l border-[#9e9fa0]">
+      <a href="Terms" class="block pl-[30px] text-[#9e9fa0] text-[12px] leading-[35px]">
+        Terms
+      </a>
+      <a href="Help" class="block pl-[30px] text-[#9e9fa0] text-[12px] leading-[35px]">
+        Help
+      </a>
+      <a href="Privacy" class="block pl-[30px] text-[#9e9fa0] text-[12px] leading-[35px]">
+        Privacy
+      </a>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="mt-4">
+      <i class="fa-brands fa-facebook-f pl-[20px]"></i>
+      <i class="fa-brands fa-instagram pl-[20px]"></i>
+      <i class="fa-brands fa-google-plus-g pl-[20px]"></i>
+      <i class="fa-brands fa-x-twitter pl-[20px]"></i>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
